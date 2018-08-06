@@ -32,5 +32,5 @@ function tweetHash() {
 // Try to tweet something as soon as we run the program...
 tweetHash();
 // ...and then every 30 mins after that. Time here is in milliseconds, so
-// 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 30 = 30 minutes --> 1000 * 60 * 30
-setInterval(tweetHash, 1000 * 60 * 30);
+// 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 60 = 60 minutes --> 1000 * 60 * 60
+setInterval(tweetHash, 1000 * 60 * 60);
