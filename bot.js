@@ -13,7 +13,7 @@ function genHash() {
   return hash;
 };
 
-// This function finds the latest tweet with the #mediaarts hashtag, and retweets it.
+// This function tweets the created hash in genHash
 function tweetHash() {
   const tweet = genHash();
   T.post('statuses/update', { tweet }, (err, data, response) => {
@@ -29,6 +29,6 @@ function tweetHash() {
 
 // Try to tweet something as soon as we run the program...
 tweetHash();
-// ...and then every 60 mins after that. Time here is in milliseconds, so
-// 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 60 = 60 minutes --> 1000 * 60 * 60
+// ...and then every 30 mins after that. Time here is in milliseconds, so
+// 1000 ms = 1 second, 1 sec * 60 = 1 min, 1 min * 30 = 30 minutes --> 1000 * 60 * 30
 setInterval(tweetHodor, 1000 * 60 * 30);
