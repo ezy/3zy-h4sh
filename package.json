@@ -1,7 +1,7 @@
 {
   "name": "3zy-h4sh",
   "version": "1.0.0",
-  "description": "Just posts a hash to my twitter account every hour",
+  "description": "Just posts a hash to my twitter account every 30 min",
   "main": "bot.js",
   "repository": {
     "type": "git",
